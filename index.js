@@ -11,16 +11,11 @@ const app = express()
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-// routes
+// route
 app.use('/api/products', productRoute);
 
 
-app.get('/', (req, res) => {
-    res.send('Hello from Node API Server')
-});
-
-
-
+// mongoDB connection
 mongoose.connect(url)
   .then(() => {
     console.log('Connected to database!')

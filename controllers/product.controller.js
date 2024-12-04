@@ -1,6 +1,6 @@
 const Product = require('../models/product.model.js')
 
-
+// controllers
 const getProducts = async (req, res) => {
     try {
         const products = await Product.find({})

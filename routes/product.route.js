@@ -7,7 +7,7 @@ const { getProducts,
     } = require('../controllers/product.controller.js');
 const router = express.Router();
 
-
+// routes
 router.get('/', getProducts);
 router.get('/:id', getProduct);
 router.post('/', createProduct);
